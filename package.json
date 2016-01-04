@@ -1,0 +1,35 @@
+{
+  "name": "challenge-play-java",
+  "version": "1.0.0",
+  "description": "Check api-first-spec for java in play framework, use sqlite database.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha spec/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sukeshni/challenge-play-java.git"
+  },
+  "keywords": [
+    "java",
+    "play",
+    "framework",
+    "mocha",
+    "test",
+    "api-first-spec"
+  ],
+  "author": "Givery Inc.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sukeshni/challenge-play-java/issues"
+  },
+  "homepage": "https://github.com/sukeshni/challenge-play-java#readme",
+  "devDependencies": {
+    "api-first-spec": "^0.2.9",
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  }
+}
