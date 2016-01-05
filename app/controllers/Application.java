@@ -2,6 +2,18 @@ package controllers;
 
 import play.mvc.Controller;
 import play.mvc.Result;
+import play.mvc.BodyParser;
+
+import play.libs.Json;
+
+import java.lang.Object;
+
+import org.json.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.node.ObjectNode;
+
 import models.User;
 
 public class Application extends Controller {
@@ -20,8 +32,18 @@ public class Application extends Controller {
     }
   }
 
+  @BodyParser.Of(BodyParser.Json.class)
   public static Result login(Long id) {
-    User.login(id);
-    return ok("Logged In !");
+    JsonNode json = request().body().asJson();
+    ObjectNode result = Json.newObject();
+    result.put("result", "Logged In !");
+    return ok(result);
   }
+
 }
+
+
+
+
+
+

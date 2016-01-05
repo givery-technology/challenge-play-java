@@ -27,7 +27,7 @@ public class User extends Model {
   }
   
   public static void create(String email, String password) {
-    User user = null;
+    User user = new User();
     user.email = email;
     user.password = password;
     user.save();
