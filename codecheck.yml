@@ -1,0 +1,7 @@
+build:
+  - npm install
+web:
+  command: sbt run
+  port: 9000
+  console: true
+test: mocha --recursive spec/*

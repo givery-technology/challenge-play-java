@@ -1,0 +1,11 @@
+
+{
+  "editable": [
+    "codecheck.yml",
+    "app/*"
+  ],
+  "exclude": [
+    "challenge.json"
+  ],
+  "test": "mocha --recursive spec/*"
+}
